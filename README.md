@@ -4,10 +4,25 @@ Written by Adam Larson (Human guy)
 The purpose for me was to practice using the camera with coding
 
 
-Description: This code connects your laptop camera to your Python program. Then it starts rolling, and you can see a video of yourself. To quit, type the letter q on the keyboard. 
+Description: This code connects your MacBook camera to your Python program. Then it starts rolling, and you can see a video of yourself. To quit, type the letter q on the keyboard. 
 
 Feel free to use this code; I didn't make it, I just messed around with it. 
 
+
+Steps to download the cv2 Library
+1) Open computer terminal
+2) Type in this: pip install opencv-python
+3) Check it installed: python -c "import cv2; print(cv2.__version__)"
+4) Close Visual Studio Code or wherever you type in Python code
+5) Reopen it and try again
+
+
+NOTE: If you are trying to connect a window's webcam: 
+  Replace this code: camera = cv2.VideoCapture(1)
+  With This code: cv2.VideoCapture(1, cv2.CAP_DSHOW)
+
+  But it may not work depending on the webcam or the Windows version you have.
+  So good luck with that.
 
 
 IMPORTANT NOTE: 
