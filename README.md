@@ -1,6 +1,12 @@
-This code connects your camera from your laptop to your python program. Then it starts rolling. Where you can see a video of yourself. To quit type the letter q on the keyboard. 
+Created By AI
+Written by Adam Larson (Human guy)
 
-Feel free to use this code I don't care I was just messing around with it
+The purpose for me was to practice using the camera with coding
+
+
+Description: This code connects your laptop camera to your Python program. Then it starts rolling, and you can see a video of yourself. To quit, type the letter q on the keyboard. 
+
+Feel free to use this code; I didn't make it, I just messed around with it. 
 
 
 
@@ -9,7 +15,8 @@ IMPORTANT NOTE:
   camera = cv2.VideoCapture(1)
   
   If your camera isn't working, change the number 1 to 0. If it still isn't working, then try 2, 3, 4, etc. 
-  My camera on my MacBook is considered number 1. 
+  My MacBook camera is number 1. 
+        #I personally ran into this problem where I couldn't find my camera right away so I had to just guess and check
   
   Normally the count starts at 0 then goes up.
   So for example:
@@ -18,8 +25,12 @@ IMPORTANT NOTE:
   Camera 2: Another attached camera (3 Cameras connected to your laptop)
   Camera 3: Another attached camera (4 cameras connected to your laptop)
 
-  Note: 
-    The number only signifies which camera is going to videotape you. You can't run all of them at once with that one line. 
-  
   The number goes up for each camera you add. So, for most people, change the code to be this: 
   camera = cv2.VideoCapture(0)
+
+Note: 
+The number only signifies which camera is going to videotape you. You can't run all of them at once with that one line.
+    Well you can try it with like a while loop counter thing, but that would make the video quality bad for all of the cameras. 
+    Unless your computer is fast enough to run them all without it looking weird. But that could cause some other weird bugs too.
+
+
